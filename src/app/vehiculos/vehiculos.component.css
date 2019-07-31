@@ -1,0 +1,25 @@
+#tituloVeh {
+    color: #a08eff;
+    margin-top: 50px;
+    text-align: center;
+}
+.contenedor-vehiculos {
+    margin: 2%;
+    padding: 2rem;
+    float: left;
+    margin-left: 10%;
+}
+
+.vehiculo-card {
+    text-align: center;
+    color: #a08eff;
+    float: left;
+    margin: 20px;
+}
+
+.vehiculo-card:hover {
+    cursor: pointer;
+    background-color: #a08eff;
+    color: #fff;
+    transition: all 1000ms;
+} 

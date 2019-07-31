@@ -1,0 +1,20 @@
+<div class="container-fluid panel">
+<ngb-accordion #acc="ngbAccordion" [closeOthers]="true" >
+  <ngb-panel *ngFor="let sitio of json">
+    <ng-template ngbPanelHeader>
+        <div class="d-flex align-items-center justify-content-between">
+            <h5>{{sitio.nombre}}</h5>
+            <button ngbPanelToggle class="btn">Ver info</button>
+        </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+        <div class="panel-content">
+            <span>{{sitio.nombre}}</span> <span style="float:right">{{sitio.tipo}}</span>
+            <h5>Dirección: {{sitio.direccion}} Teléfono: {{sitio.telefono}}</h5>
+              <p>{{sitio.descripcion}}</p>
+              <p>horario: {{sitio.horario}}</p>
+        </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+</div>

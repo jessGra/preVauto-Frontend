@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark backcolor bar" >
+    <span (click)="menuButton(menu, menuU)" class="btn-header">&#9776;</span>
+    <a class="navbar-brand xxxlarge text-white" routerLink="/" >PREVAUTO</a>
+    <div class="navbar-nav">
+        <a class="navbar-brand" (click)="menuUser(menu, menuU)"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png"></a>
+    </div>
+  </nav>
+
+<aside #menu style="left: -200px;" id="asidel">
+        <ul>
+            <li><span routerLink="/vehiculos" (click)="menuButton(menu, menuU)">Vehiculos</span><span></span></li>
+            <li><span>Cronograma</span><span></span></li>
+            <li><span routerLink="/sitios" (click)="menuButton(menu, menuU)">Sitios</span><span></span></li>
+            <li><span routerLink="/recordatorios" (click)="menuButton(menu, menuU)">Recordatorios</span><span></span></li>
+        </ul>
+</aside>
+
+<div id="menuUser" style="right: -200px;" #menuU>
+    <ul>
+        <li routerLink="/">Perfil</li>
+        <li routerLink="/">Logout</li>
+    </ul>
+</div>

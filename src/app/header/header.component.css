@@ -1,0 +1,121 @@
+.backcolor {
+    background-color: #a08eff !important;
+}
+.bar{
+   
+}
+.xxxlarge{
+    font-size:48px!important;
+    font: oblique bold 100% cursive;
+}
+.btn-header{
+    background-color: transparent;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.btn-header:hover {
+    background-color: #dfdfdf;
+    border: 1px solid #dfdfdf;
+    color: #a08eff;
+}
+
+#asidel ul li, ul li span:last-child {
+    transition:all 500ms;
+}
+
+#asidel {
+    background:#a08eff;
+    height:100%;
+    width:200px;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+    transition: all 500ms linear;
+}
+
+#asidel ul {
+    margin:0;
+    padding:0;
+    counter-reset:li;
+}
+#asidel ul li {
+    list-style:none;
+    border-bottom:1px solid #fff;
+    height:52px;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+}
+#asidel ul li:hover {
+    color:#a08eff;
+    cursor:pointer;
+}
+#asidel ul li span {
+    display:block;
+    padding:15px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+#asidel ul li span:first-child {
+    z-index:2;
+}
+#asidel ul li span:last-child {
+    padding:0;
+    display:block;
+    background:#dfdfdf;
+    z-index:1;
+    position:absolute;
+    top:0;
+    left:-300px;
+    bottom:0;
+    width:300px;
+    height:52px;
+}
+#asidel ul li:hover > span:last-child {
+    left:0;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#menuUser {
+    margin: 0;
+    padding: 0;
+    position: fixed!important;
+    width: 200px;
+    right: 0%;
+    transition: all 500ms linear;
+    z-index:1;
+    overflow:auto;
+}
+
+#menuUser ul li {
+    margin-left: -40px;
+    color: #fff;
+    background-color: #a08eff;
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+#menuUser li:hover {
+    background-color: #dfdfdf!important;
+    color: #a08eff!important;
+    transition: all 200ms linear;
+    cursor: pointer;
+}

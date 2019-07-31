@@ -1,0 +1,24 @@
+.panel {
+    margin-top: 10px;
+}
+.btn {
+    background-color: #a08eff;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #f7f7f7;
+    color: #a08eff;
+    border: 1px solid #a08eff;
+    cursor: pointer;
+}
+
+.panel-content > h5, p {
+    text-align: center;
+}
+
+.panel-content > span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+  
